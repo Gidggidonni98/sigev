@@ -1,0 +1,8 @@
+
+    .navbar .container-fluid, .navbar-expand-lg .navbar.collapse, .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar{
+
+    }
