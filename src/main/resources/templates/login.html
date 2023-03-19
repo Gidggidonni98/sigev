@@ -5,25 +5,48 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link th:replace="fragments/boostrap :: css">
-    <link th:href="@{/css/Login/login.css}" rel="stylesheet" crossorigin="anonymous">
+    <link th:insert="/fragments/boostrap :: css">
+    <link th:href="@{/css/login/login.css}" rel="stylesheet" crossorigin="anonymous">
     <title>LogIn</title>
 </head>
 <body >
     <div class="container-fluid" > 
-        <div class="row">
+        <div class="row" >
             <div class="col-12 encabezado">
+                <img th:src="@{/img/img.png}" alt="" >
+                <h2>Login</h2>
+                <img class="two " th:src="@{/img/img_1.png}" alt="" >
             </div>
-            <div class="col-6 card-Login">
-                <img src="">
-                <label>Correo:</label>
-                <input>
-                <label>Contrase�a:</label>
-                <input>
-                <button></button>   
-            </div>
-            <div class="col-6 card">
-            </div>    
+            <div class="col-12 row imgBa"  style="background-image: url('../img/fongo.jpg');background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;">
+                <div class="col-6 card-Login row">
+                    <form th:action="@{/login}">
+                        <img th:src="@{/img/img_1.png}" width="150" height="150" class="img-Backgrund">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo :</label>
+                            <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="correo@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña :</label>
+                            <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Password">
+                            <a href="/">¿Olvidates tu contraseña ? </a>
+                        </div>
+                        <div th:if="${param.error}">
+                            Invalid username and password.
+                        </div>
+                        <div th:if="${param.logout}">
+                            You have been logged out.
+                        </div>
+                        <div><input type="submit" class="btn button" value="Login"/></div>
+                    </form>
+                </div>
+                <div class="col-6 card">
+                    <img th:src="@{/img/img.png}" alt="">
+                </div>
+        </div>
+
         </div>     
     </div>    
 </body>
