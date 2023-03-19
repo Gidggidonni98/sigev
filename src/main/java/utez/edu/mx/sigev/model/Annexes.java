@@ -1,14 +1,17 @@
 package utez.edu.mx.sigev.model;
 
-public class Category {
-    private  int id;
+public class Annexes {
+    private int id;
+    private String data;
     private String description;
 
-    public Category(int id, String description) {
-        this.id = id;
-        this.description = description;
+    public Annexes() {
     }
-    public Category() {
+
+    public Annexes(int id, String data, String description) {
+        this.id = id;
+        this.data = data;
+        this.description = description;
     }
 
     public int getId() {
@@ -17,6 +20,14 @@ public class Category {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 
     public String getDescription() {

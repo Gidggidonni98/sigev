@@ -1,0 +1,143 @@
+.container-fluid{
+    background-color: #A3A3A3;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: gray;
+    width: 100%;
+    height: 100%;
+}
+.imgBa{
+    background-image: url("../img/Fongo.jpg");
+}
+.encabezado{
+    background-color: #73286B;
+    width: 100%;
+    height: 100px;
+}
+.encabezado .two{
+    margin: 15px 0 0 auto;
+}
+.card-Login{
+    background-color: #D7D7D7;
+    margin : 100px auto 0 auto;
+    width: 27em;
+    height: 500px;
+}
+.card{
+    background: transparent;
+    border: black 0px solid;
+    margin : 100px auto 0 auto;
+    width: 30em;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 300px;
+    height: 300px;
+
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 50px 0 -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form img{
+    margin-left: 35px;
+}
+.input{
+    width: 130%;
+}
+.form-group{
+    margin-top: 20px;
+}
+.button{
+    margin-top: 50px;
+    background: #632878;
+    color: white;
+    width: 100px;
+}
+.encabezado{
+    display: flex;
+}
+.encabezado img{
+    width: 75px;
+    height: 75px;
+    margin: 15px 5px 5px 5px;
+}
+.encabezado h2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media (min-width: 1440px) {
+    .card-Login{
+        width: 40em;
+    }
+    form {
+        width: 150%;
+        max-width: 800px;
+        margin: 0 50px 0 -100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form img{
+        margin-left: 155px;
+    }
+    .input{
+        width: 200%;
+    }
+    .form-group{
+        margin-top: 20px;
+    }
+    .button{
+        margin-top: 50px;
+        background: #632878;
+        color: white;
+        margin-left: 155px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 922px) {
+    .card{
+        visibility: hidden;
+        display: none;
+    }
+    .card-Login{
+        width: 25em;
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        visibility: hidden;
+        display: none;
+    }
+    .card-Login{
+        width: 21em;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .card{
+        visibility: hidden;
+        display: none;
+    }
+    .card-Login{
+        width: 20em;
+        margin: 100px auto 0 10px;
+    }
+}

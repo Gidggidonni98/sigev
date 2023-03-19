@@ -1,14 +1,15 @@
 package utez.edu.mx.sigev.model;
 
-public class Category {
-    private  int id;
+public class State_Incident {
+    private int id;
     private String description;
 
-    public Category(int id, String description) {
+    public State_Incident() {
+    }
+
+    public State_Incident(int id, String description) {
         this.id = id;
         this.description = description;
-    }
-    public Category() {
     }
 
     public int getId() {
