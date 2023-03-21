@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./sideBar.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div id="sidebar-container" class="bg-main">
+            <div class="logo ">
+                <div class="profile">
+                    <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg"
+                        alt="profile_picture">
+                    <p>Nombre administrador</p>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="#" class="d-block text-white p-3"> <i class="fa-solid fa-gauge"></i> Dashboard</a>
+                <a href="#" class="d-block text-white p-3"><i class="fa-solid fa-brush"></i> Tema y contenido</a>
+                <a href="#" class="d-block text-white p-3"><i class="fa-solid fa-users"></i> Enlaces</a>
+                <a href="#" class="d-block text-white p-3"><i class="fa-solid fa-users-gear"></i> Administradores</a>
+                <a href="#" class="d-block text-white p-3"><i class="fa-solid fa-shapes"></i> Categorías</a>
+                <a href="#" class="d-block text-white p-3"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Blank_map_of_Morelos.svg/1280px-Blank_map_of_Morelos.svg.png"
+                        width="30" height="23">
+                    Municipios</a>
+                <a href="#" class=" d-block text-white p-3" id="logout"><i class="fa-solid fa-right-from-bracket"></i>
+                    Cerrar sesión</a>
+            </div>
+        </div>
+
+        <div class="w-100">
+            <nav class=" w-100 navbar navbar-dark secondaryColor sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Coat_of_arms_of_Morelos.svg/1200px-Coat_of_arms_of_Morelos.svg.png"
+                            alt="" width="35" class="d-inline-block align-text-top">
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
+                    <a class="d-flex navbar-brand" href="#">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5609c343e4b0cbf6eb5548e4/1598900429639-P7LC22GUB3O2593JWQAC/MORELOS_Mesa+de+trabajo+1.png"
+                            alt="" width="55" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </nav>
+            <button id="btnSide" type="button" class="btn bg-main btn-circle sticky-top m-2"><i
+                    class="fa-sharp fa-solid fa-bars"></i></button>
+
+            <!-- contenido de pagina -->
+            <div id="content" class="container">
+                <div class="container d-flex align-items-center ">
+                    <h1>Tema y contenido</h1>
+                </div>
+                <hr size="5px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12 h-100">
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex align-items-center">
+                                    <h2>Aviso de privacidad</h2>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <form>
+                                        <div class="mb-3">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="11"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-card shadow border-0 " style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Imagen login</h2>
+                                    <form class="text-end ms-auto">
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 h-100">
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Colores</h2>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="d-flex justify-content-around p-5">
+                                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                            </div>
+                                            <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Logo 1</h2>
+                                    <form class="text-end ms-auto">
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Logo 2</h2>
+                                    <form class="text-end ms-auto">
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var btnSide = document.querySelector("#btnSide");
+        var sideBar = document.querySelector("#sidebar-container");
+
+        btnSide.addEventListener("click", function () {
+            if (sideBar.classList.contains('sidebar-inactivate')) {
+                sideBar.classList.remove('sidebar-inactivate')
+            } else {
+                sideBar.classList.add('sidebar-inactivate')
+            }
+        })
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
