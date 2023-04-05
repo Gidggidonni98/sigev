@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comités</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.4/datatables.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <div class="d-flex">
+        <div th:insert="~{fragments/sideBar :: sideBar}"></div>
+
+        <div class="w-100">
+            <div th:insert="~{fragments/navBar :: navBar}"></div>
+
+            <!-- contenido de pagina -->
+            <div id="content">
+                <div class="container d-flex align-items-center ">
+                    <h1>Comités</h1>
+                    <button class="btn btn-add ms-auto ">Registrar <i class="fa-solid fa-plus "></i></button>
+                </div>
+                <div class="container">
+
+                    <hr size="5px">
+                    <div class="container">
+                        <table class="table " id="comitesTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-start">Nombre del presidente</td>
+                                    <td class="text-start">Colonia</td>
+                                    <td class="text-end">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-info"></i></button>
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-power-off"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-start">Nombre del presidente</td>
+                                    <td class="text-start">Colonia</td>
+                                    <td class="text-end">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-info"></i></button>
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-power-off"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-start">Nombre del presidente</td>
+                                    <td class="text-start">Colonia</td>
+                                    <td class="text-end">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-info"></i></button>
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-power-off"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-start">Nombre del presidente</td>
+                                    <td class="text-start">Colonia</td>
+                                    <td class="text-end">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-info"></i></button>
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-power-off"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-start">Nombre del presidente</td>
+                                    <td class="text-start">Colonia</td>
+                                    <td class="text-end">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-info"></i></button>
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-power-off"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-start">Nombre del presidente</td>
+                                    <td class="text-start">Colonia</td>
+                                    <td class="text-end">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                        <img class="imgTable"
+                                            src="https://i0.wp.com/tracklist.com.br/wp-content/uploads/2022/08/lana-1.png?fit=1200%2C675&ssl=1"
+                                            alt="...">
+                                    </td>
+                                    <td class="text-end">
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-info"></i></button>
+                                        <button type="button" class="btn bg-main btn-circle m-1"><i
+                                                class="fa-solid fa-power-off"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script th:src="@{/js/nav.js}"></script>
+    <scrip th:src="@{/js/bootstrap.bundle.min.js}"></scrip>
+    <script src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#comitesTable').DataTable();
+        });
+
+        var tableData = $('#comitesTable').DataTable({
+            ordering: false,
+            language: {
+                processing: "",
+                search: "Buscar:",
+                lengthMenu: "Mostrar _MENU_ registros",
+                info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
+                infoEmpty: "No hay registros para mostrar",
+                infoFiltered: "(filtrado de _MAX_ entradas totales)",
+                infoPostFix: "",
+                loadingRecords: "Cargando...",
+                zeroRecords: "No se encontraron registros coincidentes",
+                emptyTable: "Aucune donnée disponible dans le tableau",
+                paginate: {
+                    first: "Primero",
+                    previous: "Anterior",
+                    next: "Siguiente",
+                    last: "Último"
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
