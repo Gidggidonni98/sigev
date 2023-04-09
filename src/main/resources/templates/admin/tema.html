@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tema y contenido</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div th:insert="~{fragments/sideBar :: sideBar}"></div>
+
+        <div class="w-100">
+            <div th:insert="~{fragments/navBar :: navBar}"></div>
+
+            <!-- contenido de pagina -->
+            <div id="content" class="container">
+                <div class="container d-flex align-items-center ">
+                    <h1>Tema y contenido</h1>
+                </div>
+                <hr size="5px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12 h-100">
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex align-items-center">
+                                    <h2>Aviso de privacidad</h2>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <form>
+                                        <div class="mb-3">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="11"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-card shadow border-0 " style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Imagen login</h2>
+                                    <form class="text-end ms-auto">
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 h-100">
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Colores</h2>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="d-flex justify-content-around p-5">
+                                                <input type="color" class="form-control form-control-color"
+                                                    id="exampleColorInput" value="#632878" title="Choose your color">
+                                                <input type="color" class="form-control form-control-color"
+                                                    id="exampleColorInput" value="#73286B" title="Choose your color">
+                                                <input type="color" class="form-control form-control-color"
+                                                    id="exampleColorInput" value="#000000" title="Choose your color">
+                                                <input type="color" class="form-control form-control-color"
+                                                    id="exampleColorInput" value="#ffffff" title="Choose your color">
+                                            </div>
+                                            <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Logo 1</h2>
+                                    <form class="text-end ms-auto">
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3 bg-card shadow border-0" style="border-radius: 0%;">
+                                <div class="card-header border-0 d-flex ">
+                                    <h2>Logo 2</h2>
+                                    <form class="text-end ms-auto">
+                                        <button type="submit" class="btn btn-main text-end">Guardar</button>
+                                    </form>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <div class="container">
+                                        <form action="">
+                                            <div class="mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script th:src="@{/js/nav.js}"></script>
+    <scrip th:src="@{/js/bootstrap.bundle.min.js}"></scrip>
+</body>
+
+</html>

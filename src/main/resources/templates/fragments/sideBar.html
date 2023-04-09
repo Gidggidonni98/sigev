@@ -1,0 +1,22 @@
+<div id="sidebar-container" class="bg-main" th:fragment="sideBar">
+    <div class="logo ">
+        <div class="profile">
+            <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg"
+                alt="profile_picture">
+            <p>Nombre administrador</p>
+        </div>
+    </div>
+    <div class="menu">
+        <a th:href="@{/admin/dashboard}" class="d-block text-white p-3"> <i class="fa-solid fa-gauge"></i> Dashboard</a>
+        <a th:href="@{/admin/tema}" class="d-block text-white p-3"><i class="fa-solid fa-brush"></i> Tema y contenido</a>
+        <a th:href="@{/enlace/listar}" class="d-block text-white p-3"><i class="fa-solid fa-users"></i> Enlaces</a>
+        <a th:href="@{/admin/administradores}" class="d-block text-white p-3"><i class="fa-solid fa-users-gear"></i> Administradores</a>
+        <a th:href="@{/category/listar}" class="d-block text-white p-3"><i class="fa-solid fa-shapes"></i> Categorías</a>
+        <a th:href="@{/municipio/listar}" class="d-block text-white p-3"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Blank_map_of_Morelos.svg/1280px-Blank_map_of_Morelos.svg.png"
+                width="30" height="23">
+            Municipios</a>
+        <a th:href="@{/admin/dashboard}" class=" d-block text-white p-3" id="logout"><i class="fa-solid fa-right-from-bracket"></i>
+            Cerrar sesión</a>
+    </div>
+</div>
